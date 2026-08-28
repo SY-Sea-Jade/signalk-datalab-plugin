@@ -1,4 +1,4 @@
 # for local notebook dev only
-marimo
+marimo>=0.24.0
 polars
 js

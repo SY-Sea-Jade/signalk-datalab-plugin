@@ -5,7 +5,6 @@ dist/
 .claude/
 .DS_Store
 **/.DS_Store
-packages/
 
 # marimo WASM build output (rebuilt by npm run build:wasm / prepare)
 public/
