@@ -243,7 +243,9 @@ async def _(
         tables[_tname] = (
             pl.DataFrame(_path_rows)
             .with_columns([
-                pl.col("timestamp").str.to_datetime(strict=False, time_unit="us"),
+                pl.col("timestamp").str.to_datetime(
+                    format="%Y-%m-%dT%H:%M:%S%.fZ", time_zone="UTC", strict=False, time_unit="us"
+                ),
                 pl.col("value").cast(pl.Float64, strict=False),
             ])
             if _path_rows else _empty
@@ -253,7 +255,9 @@ async def _(
         signalk_data = (
             pl.DataFrame(_long_rows)
             .with_columns([
-                pl.col("timestamp").str.to_datetime(strict=False, time_unit="us"),
+                pl.col("timestamp").str.to_datetime(
+                    format="%Y-%m-%dT%H:%M:%S%.fZ", time_zone="UTC", strict=False, time_unit="us"
+                ),
                 pl.col("value").cast(pl.Float64, strict=False),
             ])
         )

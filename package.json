@@ -1,6 +1,6 @@
 {
   "name": "@rhizomatics/signalk-datalab-plugin",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "signalk": {
     "displayName": "Data Lab",
     "appIcon": "logo.svg"
@@ -11,6 +11,7 @@
     "signalk-node-server-plugin",
     "signalk-webapp",
     "signalk-category-data",
+    "signalk-category-database",
     "marimo",
     "notebooks",
     "marine-data"
