@@ -11,6 +11,8 @@ the SignalK History API
 
 ## Development
 
+Development environment requirements.
+
 ### Linux Packages
 
 * node
